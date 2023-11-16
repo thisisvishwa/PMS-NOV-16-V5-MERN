@@ -1,0 +1,32 @@
+{
+  "name": "password-management-system",
+  "version": "1.0.0",
+  "description": "An industry-level Password Management System using MERN Stack",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run start\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "MERN",
+    "Password Management",
+    "Security"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.3",
+    "bcrypt": "^5.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "concurrently": "^6.2.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "14.x"
+  }
+}
